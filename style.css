@@ -1,10 +1,6 @@
 :root{
-    --bck:  #000000;
+    --bck: linear-gradient(to right, #FFC41F, #FF9C35);
 }
-
-
-
-
 
 
 body{
@@ -27,7 +23,7 @@ body{
 }
 /* ------------not working hover on elements on carousel--------------------- */
 .button:hover{
-    background: rgba(33, 124, 204, 0.158);
+    background: rgb(130, 218, 30);
     color: var(--bck);
 }
 .carousel-inner{
@@ -65,12 +61,6 @@ body{
     right: 50%;
     transform: translateX(50%);
 }
-
-
-
-
-
-
 
 
 
