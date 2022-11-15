@@ -1,0 +1,85 @@
+:root{
+    --bck:  #000000;
+}
+
+
+
+
+
+
+body{
+    font-family: 'PT Serif', serif;
+}
+.nav-link{
+    font-weight: 700;
+}
+.navbar-nav a{
+    padding: 0.3rem 0px;
+}
+.button{
+    background: var(--bck);
+    border: none;
+    color: aliceblue;
+    border-radius: 7px;
+    padding: .5rem 1.1rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+/* ------------not working hover on elements on carousel--------------------- */
+.button:hover{
+    background: rgba(33, 124, 204, 0.158);
+    color: var(--bck);
+}
+.carousel-inner{
+    background-image: url("hot-gadgets/bg-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+/* ------------------------------"background-size contain" helps to fit the background properly on mobile mode-------------------------------- */
+    background-size: contain;
+}
+.outsidebg{
+    background: rgba(211, 226, 181, 0.253);
+    background-image: url("hot-gadgets/bg-2.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.card{
+    border: none;
+    box-shadow: 5px 5px 15px lightgray;
+}
+.card-footer{
+    background: transparent;
+    border: none;
+}
+.categories{
+    position: relative;
+}
+.categories::after{
+    content: "";
+    position: absolute;
+    height: .3rem;
+    width: 7rem;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFC41F, #FF9C35);
+    top: 110%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+
+
+
+
+
+
+
+
+/* ----------------carouseler p-text mobile mode a boro chuto hoye jacche tai oita fix korar jonno nicher media query use kora hoise----------------  */
+@media (width <= 1000px) {
+    .carP{
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
