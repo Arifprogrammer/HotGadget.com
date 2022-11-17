@@ -169,13 +169,12 @@ body{
 /* --------------------Nicher formular explaination min-width 768px and max-width 990px--------------------- */
 @media (768px <= width <= 990px) {
     .part1 img{
-        width: max(200px, 100%);
         padding: 1.3rem;
     }
 }
+/* --------------------Nicher formular explaination min-width 990px and max-width 1200px--------------------- */
 @media (990px <= width <= 1200px) {
     .part1 img{
-        width: max(200px, 100%);
         padding: 2.8rem;
     }
 }
@@ -236,7 +235,8 @@ body{
         grid-row: 4 / -1;
     }
     .testgridpic{
-        padding: 2rem 10rem;
+        padding: 2rem 8rem;
+        width: min(600, 100%);
     }
 }
 @media (768px <= width <= 1200px) {
